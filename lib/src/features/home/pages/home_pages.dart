@@ -124,6 +124,9 @@ class _MyHomePageState extends State<MyHomePage>
             widget.versionUpgrader.buildNumber) {
           showModalBottomSheet(
             context: context,
+            isDismissible: false,
+            useSafeArea: true,
+            enableDrag: false,
             builder: (context) {
               return MyBottomSheet(
                 appstoreLink: _appstoreLink,
